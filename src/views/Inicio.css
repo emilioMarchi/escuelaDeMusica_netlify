@@ -1,9 +1,8 @@
 .inicio-view {
     margin: 0; padding: 0;
     width: 100%; height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
+
 }
 .title {
     align-items: center;
@@ -32,4 +31,35 @@
     position: relative;
     top: 10%;
     left: 10%;
+}
+
+
+
+.section-2 {
+    width: 100%; height: 100%;
+    padding: 3rem;
+}
+.section-2 .information-section{
+    height: 100%;
+    padding: 0 5rem 0 0;
+    align-items: center;
+
+
+}
+.section-2 .information-section .item-section{
+    margin-top: 3rem;
+}
+
+.section-2 .agenda-slider{
+    height: 100%;
+}
+.section-2 .agenda-slider .agenda-title{
+    
+    margin-top: 3rem;
+    
+}
+.section-2 .agenda-slider .agenda-items{
+    
+    margin-top: 1rem;
+    
 }
