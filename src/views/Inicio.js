@@ -15,8 +15,10 @@ export default class InicioView extends Component{
                         <h1>Escuela de música barrial</h1>
                         <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</h3>
                     </div>
-                    <div className='col'>
-
+                    <div className='img-container col'>
+                        <img src='./img/cuadrado.png' />
+                        <img src='./img/cuadrado.png' />
+                        <img src='./img/cuadrado.png' />
                     </div>
                 </div>
             </div>

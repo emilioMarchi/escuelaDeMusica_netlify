@@ -1,4 +1,5 @@
 .inicio-view {
+    margin: 0; padding: 0;
     width: 100%; height: 100%;
     display: flex;
     align-items: center;
@@ -7,4 +8,28 @@
 .title {
     align-items: center;
     justify-content: center;
+}
+
+.section-1 {
+    width: 100%; height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.section-1 .img-container {
+    width: 100%; height: 100%;
+}
+.section-1 .img-container img:nth-child(1n){
+    position: relative;
+    top: 35%;
+    left: 55%;
+}
+.section-1 .img-container img:nth-child(2n){
+    position: relative;
+    top: 20%;
+    left: -20%;
+}
+.section-1 .img-container img:nth-child(3n){
+    position: relative;
+    top: 10%;
+    left: 10%;
 }
