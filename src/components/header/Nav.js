@@ -13,7 +13,7 @@ export default function Nav () {
                     <a href='/quienes-somos'>¿Quiénes somos?</a>
                 </li>
                 <li>
-                    <a href='/como-ayudar'>¿Cómo ayudar?</a>
+                    <a href='/como-ayudar'>¿Cómo colaborar?</a>
                 </li>
                 <li>
                     <a href='/agenda'>Agenda</a>

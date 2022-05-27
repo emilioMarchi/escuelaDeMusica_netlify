@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //Components
 import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 //views
 import  InicioView  from "./views/Inicio";
 import QHacemosView from "./views/QueHacemos";
@@ -29,6 +30,7 @@ function App() {
         <Route path="/*" element={<NotFoundPage />}>
         </Route>
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
