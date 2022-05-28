@@ -2,8 +2,7 @@ import React from "react";
 import {Routes, Route } from "react-router-dom";
 
 //Components
-import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
+
 //views
 import  InicioView  from "./views/Inicio";
 import QHacemosView from "./views/QueHacemos";
@@ -18,8 +17,8 @@ import './App.css';
 
 function App() {
   return (
-      <div>
-        <Header/>
+    <div>
+        
         <Routes>
           <Route exact path="/" element={<InicioView />}/>
           <Route path="/que-hacemos" element={<QHacemosView />}/>
@@ -31,7 +30,7 @@ function App() {
           <Route path="/*" element={<NotFoundPage />}>
           </Route>
         </Routes>
-        <Footer/>
+        
       </div>
   );
 }
