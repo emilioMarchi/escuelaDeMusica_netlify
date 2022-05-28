@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 import './nav.css'
 
 export default function Nav () {
@@ -7,19 +7,19 @@ export default function Nav () {
         <div className='nav'>
             <ul>
                 <li>
-                    <a href='/'>Inicio</a>
+                    <Link to='/'>Inicio</Link>
                 </li>
                 <li>
-                    <a href='/quienes-somos'>¿Quiénes somos?</a>
+                    <Link to='/quienes-somos'>Quiénes somos</Link>
                 </li>
                 <li>
-                    <a href='/como-ayudar'>¿Cómo colaborar?</a>
+                <   Link to='/como-ayudar'>Cómo colaborar</Link>
                 </li>
                 <li>
-                    <a href='/agenda'>Agenda</a>
+                    <Link to='/agenda'>Agenda</Link>
                 </li>
                 <li>
-                    <a href='/contacto'>Contacto</a>
+                    <Link to='/contacto'>Contacto</Link>
                 </li>
             </ul>
         </div>
