@@ -7,19 +7,19 @@ export default function Nav () {
         <div className='nav'>
             <ul>
                 <li>
-                    <Link to='/'>Inicio</Link>
+                    <Link to="/">Inicio</Link>
                 </li>
                 <li>
-                    <Link to='/quienes-somos'>Quiénes somos</Link>
+                    <Link to="/que-hacemos">Quiénes somos</Link>
                 </li>
                 <li>
-                <   Link to='/como-ayudar'>Cómo colaborar</Link>
+                <   Link to="/como-ayudar">Cómo colaborar</Link>
                 </li>
                 <li>
-                    <Link to='/agenda'>Agenda</Link>
+                    <Link to="/agenda">Agenda</Link>
                 </li>
                 <li>
-                    <Link to='/contacto'>Contacto</Link>
+                    <Link to="/contacto">Contacto</Link>
                 </li>
             </ul>
         </div>
