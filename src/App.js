@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Routes, Route } from "react-router-dom";
 
 //Components
 import Header from "./components/header/Header";
@@ -18,21 +18,21 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Header/>
-      <Routes>
-        <Route path="/" element={<InicioView />}/>
-        <Route path="/que-hacemos" element={<QHacemosView />}/>
-        <Route path="/quienes-somos" element={<QSomosView />}/>
-        <Route path="/galeria" element={<GaleriaView />}/>
-        <Route path="/agenda" element={<AgendaView />}/>
-        <Route path="/contacto" element={<ContactoView />}/>
-        <Route path="/como-ayudar" element={<CAyudarView />}/>
-        <Route path="/*" element={<NotFoundPage />}>
-        </Route>
-      </Routes>
-      <Footer/>
-    </BrowserRouter>
+      <div>
+        <Header/>
+        <Routes>
+          <Route exact path="/" element={<InicioView />}/>
+          <Route path="/que-hacemos" element={<QHacemosView />}/>
+          <Route path="/quienes-somos" element={<QSomosView />}/>
+          <Route path="/galeria" element={<GaleriaView />}/>
+          <Route path="/agenda" element={<AgendaView />}/>
+          <Route path="/contacto" element={<ContactoView />}/>
+          <Route path="/como-ayudar" element={<CAyudarView />}/>
+          <Route path="/*" element={<NotFoundPage />}>
+          </Route>
+        </Routes>
+        <Footer/>
+      </div>
   );
 }
 
