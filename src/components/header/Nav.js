@@ -4,7 +4,7 @@ import './nav.css'
 
 export default function Nav () {
     return(
-        <Router>
+        
             <div className='nav'>
                 <ul>
                     <li>
@@ -25,6 +25,6 @@ export default function Nav () {
                 </ul>
             </div>
 
-        </Router>
+
     )
 }
