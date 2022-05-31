@@ -10,19 +10,19 @@ export default class InicioView extends Component{
     render() {
         return(
             <div className='inicio-view'>
-                <div className='section-1 d-flex container'>
-                    <div className='title col'>
-                        <h1>Escuela de música barrial</h1>
-                        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</h3>
+                <div className='section-1  container'>
+                    <div className='title col-sm'>
+                        <h1>ESCUELA DE <br/>  MÚSICA BARRIAL</h1>
+                        <h3>Bienvenidos. Gracias por visitarnos e interesarte por nuestro trabajo. Aquí podrás conocer quiénes somos, nuestra historia, nuestros proyectos y si te parece, contactarnos para trabajar juntos.</h3>
                         <div className='title-button-container'>
-                            <a href='#information-section' >Conocer más</a>
-                            <a href='/como-ayudar'>Cómo colaborar</a>
+                            <a href='#information-section' ><p>Conocer más</p></a>
+                            <a href='/como-ayudar'><p>Cómo colaborar</p></a>
                         </div>
                     </div>
-                    <div className='img-container col'>
-                        <img src='./img/portada-1.webp' />
-                        <img src='./img/portada-2.jpeg' />
-                        <img src='./img/portada-3.webp' />
+                    <div className='img-container col-sm'>
+                        <img className='img' src='./img/portada-1.webp' />
+                        <img className='img' src='./img/portada-2.jpeg' />
+                        <img className='img' src='./img/portada-3.webp' />
                     </div>
                 </div>
                 <article id='information-section' className='section-2 d-flex container'>
