@@ -8,21 +8,22 @@ export default function Nav () {
             <div className='nav'>
                 <ul>
                     <li>
-                        <Link to="/">Inicio</Link>
+                        <Link className='link' to="/">Inicio</Link>
                     </li>
                     <li>
-                        <Link to="/que-hacemos">Quiénes somos</Link>
+                        <Link className='link' to="/que-hacemos">Quiénes somos</Link>
                     </li>
                     <li>
-                    <   Link to="/como-ayudar">Cómo colaborar</Link>
+                    <   Link className='link' to="/como-ayudar">Cómo colaborar</Link>
                     </li>
                     <li>
-                        <Link to="/agenda">Agenda</Link>
+                        <Link className='link' to="/agenda">Agenda</Link>
                     </li>
                     <li>
-                        <Link to="/contacto">Contacto</Link>
+                        <Link className='link' to="/contacto">Contacto</Link>
                     </li>
                 </ul>
+                
             </div>
 
 

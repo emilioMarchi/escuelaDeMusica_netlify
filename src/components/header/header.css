@@ -4,3 +4,26 @@
     z-index: 100;
     background-color: azure;
 }
+
+.nav-bar-icon {
+    display: none ;
+}
+
+@media (max-width:380px) {
+    .header {
+        display: flex;
+        justify-content: end;
+        padding: 0 0.5rem;
+        
+    }
+    .nav-bar-icon {
+        font-size: 25px;
+        padding: 0.5rem;
+        display: flex;
+        z-index: 100;
+
+    }
+}
+@media (min-width:381px) and (max-width:760px) {
+    
+}

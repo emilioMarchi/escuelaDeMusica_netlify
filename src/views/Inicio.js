@@ -12,7 +12,7 @@ export default class InicioView extends Component{
             <div className='inicio-view'>
                 <div className='section-1  container'>
                     <div className='title col-sm'>
-                        <h1>ESCUELA DE <br/>  MÚSICA BARRIAL</h1>
+                        <h1>ESCUELA DE MÚSICA BARRIAL</h1>
                         <h3>Bienvenidos. Gracias por visitarnos e interesarte por nuestro trabajo. Aquí podrás conocer quiénes somos, nuestra historia, nuestros proyectos y si te parece, contactarnos para trabajar juntos.</h3>
                         <div className='title-button-container'>
                             <a href='#information-section' ><p>Conocer más</p></a>
