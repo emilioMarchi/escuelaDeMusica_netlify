@@ -9,7 +9,7 @@
     display: none ;
 }
 
-@media (max-width:380px) {
+@media (min-width:320px) and (max-width:760px) {
     .header {
         display: flex;
         justify-content: end;
@@ -25,5 +25,5 @@
     }
 }
 @media (min-width:381px) and (max-width:760px) {
-    
+  
 }

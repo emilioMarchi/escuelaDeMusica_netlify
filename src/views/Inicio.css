@@ -155,36 +155,39 @@
         padding: 0 0.7rem;
         margin-bottom: 1rem;
     }
+    .section-1 .img-container .img {
+        width: 13rem;
+    }
     .section-1 .img-container img:nth-child(1n){
         position: relative;
         top: 31%;
-        left: 30%;
+        left: 35%;
         
     }
     .section-1 .img-container img:nth-child(2n){
         
         position: relative;
         top: -8%;
-        left: 24%;
+        left: 32%;
     }
     .section-1 .img-container img:nth-child(3n){
         position: relative;
-        top: -15%;
-        left: 3%;
+        top: -13%;
+        left: 5%;
     }
     .section-1 .title .title-button-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        
     }
     .section-1 .title .title-button-container a{
         width: 90%;
-  
+        
         margin: 0;
         margin-bottom: 1rem;
         overflow:hidden;
-
+        
     }
     .section-1 .title .title-button-container a p{
         width: 100%;
@@ -193,10 +196,47 @@
         justify-content: center;
         margin-bottom: 1rem;
         margin: 0;
-
+        
     }
     .section-1 .title .title-button-container {
         margin-top: 0.5rem;
+    }
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-2 .information-section {
+        padding: 0;
+    }
+    .section-2 .information-section .item-section{
+        height: 25rem;
+    }
+    .section-2 .information-section a {
+        width: 100%; height: 3rem;
+        font-size: 16px;
+        text-decoration: none;
+        color: white;
+        background-color:rgb(98, 161, 148);
+        padding: 0.5rem 1rem;
+        border-radius: 0.4rem;
+        margin: 0 0 0 60% ;
+    }
+
+    .section-2 .agenda-slider{
+        width: 100%;
+        height: 100%;
+    }
+    .section-2 .agenda-slider .agenda-title{
+        
+        margin-top: 3rem;
+        
+    }
+    .section-2 .agenda-slider .agenda-items{
+        
+        margin-top: 1rem;
+        
     }
 }
 @media (min-width:381px) and (max-width:760px){
@@ -221,4 +261,5 @@
         line-height: 1;
         padding: 0 0.7rem;
     }
+
 }
