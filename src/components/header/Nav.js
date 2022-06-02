@@ -1,26 +1,33 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom';
 import './nav.css'
 
-export default function Nav () {
+export default function Nav ({state}) {
+
+    const [navState, setNavState] = useState(state)
+
+    useEffect(()=>{
+        console.log(state)
+    }, [])
+
     return(
         
-            <div className='nav'>
+            <div className={navState === false ? 'nav' : 'nav d-flex'}>
                 <ul>
                     <li>
-                        <Link className='link' to="/">Inicio</Link>
+                        <Link onClick={()=>{setNavState(false); console.log('ok')}} className='link' to="/">Inicio</Link>
                     </li>
                     <li>
-                        <Link className='link' to="/que-hacemos">Quiénes somos</Link>
+                        <Link onClick={()=>{setNavState(false)}} className='link' to="/que-hacemos">Quiénes somos</Link>
                     </li>
                     <li>
-                    <   Link className='link' to="/como-ayudar">Cómo colaborar</Link>
+                    <   Link onClick={()=>{setNavState(false)}} className='link' to="/como-ayudar">Cómo colaborar</Link>
                     </li>
                     <li>
-                        <Link className='link' to="/agenda">Agenda</Link>
+                        <Link onClick={()=>{setNavState(false)}} className='link' to="/agenda">Agenda</Link>
                     </li>
                     <li>
-                        <Link className='link' to="/contacto">Contacto</Link>
+                        <Link onClick={()=>{setNavState(false)}} className='link' to="/contacto">Contacto</Link>
                     </li>
                 </ul>
                 
