@@ -18,7 +18,7 @@ export default function Nav ({state}) {
                         <Link onClick={()=>{setNavState(false); console.log('ok')}} className='link' to="/">Inicio</Link>
                     </li>
                     <li>
-                        <Link onClick={()=>{setNavState(false)}} className='link' to="/que-hacemos">Quiénes somos</Link>
+                        <Link onClick={()=>{setNavState(false)}} className='link' to="/quienes-somos">Quiénes somos</Link>
                     </li>
                     <li>
                     <   Link onClick={()=>{setNavState(false)}} className='link' to="/como-ayudar">Cómo colaborar</Link>

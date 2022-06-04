@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 
+import Article from '../components/article/Article'
+
 import './QuienesSomos.css'
 
 export default class QSomosView extends Component{
@@ -9,6 +11,7 @@ export default class QSomosView extends Component{
     }
     render() {
         return(
+            <>
             <div className='q-somos-view'>
                 <div className='section-1 d-flex container'>
                     <div className='title col'>
@@ -17,6 +20,7 @@ export default class QSomosView extends Component{
                     </div>
                 </div>
             </div>
+            <Article/></>
         )
     }
 }
