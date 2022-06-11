@@ -1,14 +1,10 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import {Link} from 'react-router-dom';
 import './nav.css'
 
 export default function Nav ({state}) {
 
     const [navState, setNavState] = useState(state)
-
-    useEffect(()=>{
-        console.log(state)
-    }, [])
 
     return(
         

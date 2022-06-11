@@ -7,9 +7,6 @@
     padding: 0 2rem;
 }
 
-.footer-nav ul {
-    
-}
 .footer-nav ul li {
     list-style: none;
     padding: 0.5rem 1rem;
@@ -27,4 +24,27 @@
 .footer .info-contact .map{
     width: 100%;height: 100%;
     background-color: azure;
+}
+
+
+@media only screen and (max-width: 780px){
+    .footer {
+        flex-direction: column;
+        height: 35rem;
+    }
+    .footer-nav {
+     display: none;   
+    }
+    .footer .info-contact {
+        width: 100%; height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .footer .info-contact .info {
+        padding-top: 3rem;
+    }
+    .footer .info-contact .map {
+        width: 100%; height: 100%;
+    }
 }

@@ -8,7 +8,7 @@ import Footer from "./components/footer/Footer";
 //Components
 
 //views
-import  InicioView  from "./views/Inicio";
+import  {InicioView}  from "./views/Inicio";
 import QHacemosView from "./views/QueHacemos";
 import QSomosView from "./views/QuienesSomos";
 import AgendaView from "./views/Agenda";
@@ -22,7 +22,7 @@ import './App.css';
 function App() {
   return (
     <div className='animated-gradient'>
-        
+  
         <Header/>
         <Routes>
             <Route exact path="/" element={<InicioView />}/>
@@ -32,9 +32,8 @@ function App() {
             <Route path="/agenda" element={<AgendaView />}/>
             <Route path="/contacto" element={<ContactoView />}/>
             <Route path="/como-ayudar" element={<CAyudarView />}/>
-            <Route path="/*" element={<NotFoundPage />}>
-            </Route>
-        </Routes>
+            <Route path="/*" element={<NotFoundPage />}/>
+         </Routes>
         <Footer/>
         
       </div>
