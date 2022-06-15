@@ -27,6 +27,7 @@ export default function Footer() {
     return(
         <div className='footer'>
             <SocialBar/>
+            <h2>socialbar</h2>
             <div className='info-contact col-6'>
                 <div className='info'>
                     <h5>Email: email@gmail.com</h5>
