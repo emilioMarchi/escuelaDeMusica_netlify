@@ -23,7 +23,6 @@ export default function Footer() {
             </GoogleMap>
         )
     }
-
     return(
         <div className='footer'>
             <SocialBar/>
