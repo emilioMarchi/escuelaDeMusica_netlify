@@ -16,16 +16,20 @@ import CAyudarView from "./views/ComoAyudar";
 import ContactoView from "./views/Contacto";
 import GaleriaView from "./views/Galeria";
 import NotFoundPage from "./views/NotFoundPage";
+import Admin from "./views/Admin";
 
 import './App.css';
 
+
+
 function App() {
   return (
-    <div className='animated-gradient'>
+    <div >
   
         <Header/>
         <Routes>
             <Route exact path="/" element={<InicioView />}/>
+            <Route exact path="/admin" element={<Admin />}/>
             <Route path="/que-hacemos" element={<QHacemosView />}/>
             <Route path="/quienes-somos" element={<QSomosView />}/>
             <Route path="/galeria" element={<GaleriaView />}/>
