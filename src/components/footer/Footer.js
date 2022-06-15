@@ -2,8 +2,8 @@ import React, {useMemo, useEffect} from 'react'
 import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
 
 import './footer.css'
-import SocialBar from './socialBar/SocialBar''
-import {credentials} from '../../credentials'
+import SocialBar from './socialBar/SocialBar'
+
 
 export default function Footer() {
     
