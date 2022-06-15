@@ -29,7 +29,6 @@ function App() {
         <Header/>
         <Routes>
             <Route exact path="/" element={<InicioView />}/>
-            <Route exact path="/admin" element={<Admin />}/>
             <Route path="/que-hacemos" element={<QHacemosView />}/>
             <Route path="/quienes-somos" element={<QSomosView />}/>
             <Route path="/galeria" element={<GaleriaView />}/>
