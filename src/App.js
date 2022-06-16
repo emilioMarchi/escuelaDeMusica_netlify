@@ -23,12 +23,15 @@ import './App.css';
 
 
 function App() {
+
+  const basename = process.env.REACT_APP_NAME || null
+
   return (
     <div >
-        <Router>
+        <Router basename={basename}>
           <Header/>
             <Routes>
-                <Route exact path="/" element={<InicioView />}/>
+                <Route path="/" element={<InicioView />}/>
                 <Route path="/que-hacemos" element={<QHacemosView />}/>
                 <Route path="/quienes-somos" element={<QSomosView />}/>
                 <Route path="/galeria" element={<GaleriaView />}/>
