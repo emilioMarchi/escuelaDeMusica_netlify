@@ -6,13 +6,44 @@
     
     
 }
+.inicio-view .inicio-portada {
+    margin: 4rem 0 0 0;
+    width: 100%; height: 35rem;
+    padding: 0 10%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    
+   
+}
+.inicio-view .inicio-portada .img-content {
+    position: absolute;
+    left: 0;
+   width: 100%; height: 35rem;
+   margin: auto auto;
+    background-image: url('/public/img/quienes-somos.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.4);
+}
+.inicio-view .inicio-portada h3 {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    letter-spacing: .5px;
+    font-weight: 100;
+    z-index: 10;
+   
+}
+
 .section-1 .title {
     align-items: center;
     justify-content: center;
 }
 .section-1 .title h1 {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 42px;
+    font-weight: 700;
     line-height: 0.9;
 }
 .section-1 .title h3 {
@@ -99,7 +130,25 @@
 .section-2 .information-section .item-section{
     margin-top: 3rem;
 }
+.section-2 .information-section .item-section h2 {
+    font-size: 28px;
+}
+.section-2 .information-section .item-section p {
+    font-size: 19px;
+    letter-spacing: 0.5px;
+}
 
+
+.section-2 .information-section a {
+    width: 100%; height: 3rem;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    background-color:rgb(98, 161, 148);
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    
+}
 .section-2 .agenda-slider{
     height: 100%;
 }
@@ -113,7 +162,11 @@
     margin-top: 1rem;
     
 }
-
+@media(max-width:900px){
+    .section-1 .img-container {
+        display: none;
+    }
+}
 @media(max-width:780px){
     .section-1{
         
@@ -121,6 +174,7 @@
     }
 
     .section-1 .img-container {
+     
         position: absolute;
         padding: 0;
         z-index: -10;
@@ -241,9 +295,7 @@
 }
 @media (min-width:381px) and (max-width:760px){
     
-    .section-1 .title  {
-        
-    }
+   
     .section-1 .title h1 {
         font-family: 'Barlow Condensed', sans-serif;
         font-size: 32px;

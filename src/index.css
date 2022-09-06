@@ -7,14 +7,13 @@
   
 }
 body {
-  width: 100%; height: 100%;
+  width: 100vw; height: 100%;
   margin: 0;
   padding: 0;
-  background-color: rgb(233, 252, 252);
-  font-family: 'Barlow Condensed', sans-serif;
-  font-family: 'Archivo Narrow', sans-serif;
-  background-color: rgb(220, 245, 236);
-
   
+  font-family: 'Archivo Narrow', sans-serif;
+  background-color: rgb(244, 247, 223);
+
+  overflow-x: hidden;
 }
 

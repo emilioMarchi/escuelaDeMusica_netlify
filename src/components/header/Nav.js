@@ -17,7 +17,7 @@ export default function Nav ({state}) {
                         <Link onClick={()=>{setNavState(false)}} className='link' to="/quienes-somos">Quiénes somos</Link>
                     </li>
                     <li>
-                    <   Link onClick={()=>{setNavState(false)}} className='link' to="/como-ayudar">Cómo colaborar</Link>
+                    <   Link onClick={()=>{setNavState(false)}} className='link' to="/como-colaborar">Cómo colaborar</Link>
                     </li>
                     <li>
                         <Link onClick={()=>{setNavState(false)}} className='link' to="/agenda">Agenda</Link>

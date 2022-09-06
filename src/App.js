@@ -37,7 +37,7 @@ function App() {
                 <Route path="/galeria" element={<GaleriaView />}/>
                 <Route path="/agenda" element={<AgendaView />}/>
                 <Route path="/contacto" element={<ContactoView />}/>
-                <Route path="/como-ayudar" element={<CAyudarView />}/>
+                <Route path="/como-colaborar" element={<CAyudarView />}/>
                 <Route path="/*" element={<NotFoundPage />}/>
             </Routes>
           <Footer/>
