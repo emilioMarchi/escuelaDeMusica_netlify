@@ -3,7 +3,7 @@ import { useFormik } from 'formik';
 import axios from 'axios'
 import $ from 'jquery'
 
-const DonationForm = () => {
+const FormContact = () => {
     
     const [formInfo, setFormInfo] = useState()
     const [formResponse, setFormResponse] = useState()
@@ -97,15 +97,15 @@ const DonationForm = () => {
           id="userQuery"
           name="userQuery"
           type="textarea"
-          placeholder='Escribinos tu consulta'
+          placeholder='Escribinos tu mensaje'
           onChange={formik.handleChange}
           value={formik.values.userQuery}
           required
         ></textarea>
       </div>
-      <button className='form-button' type="submit">Enviar</button>
+      <button className='form-button btn btn-dark' type="submit">Enviar</button>
     </form>
   );
 };
 
-export default DonationForm
+export default FormContact

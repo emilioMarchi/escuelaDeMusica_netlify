@@ -1,17 +1,16 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom';
 import './nav.css'
 
-export default function Nav ({state}) {
+export default function Nav ({state, setNavState}) {
 
-    const [navState, setNavState] = useState(state)
 
     return(
         
-            <div className={navState === false ? 'nav' : 'nav d-flex'}>
+            <div className={state === false ? 'nav' : 'nav d-flex'}>
                 <ul>
                     <li>
-                        <Link onClick={()=>{setNavState(false); console.log('ok')}} className='link' to="/">Inicio</Link>
+                        <Link onClick={()=>{setNavState(false);}} className='link' to="/">Inicio</Link>
                     </li>
                     <li>
                         <Link onClick={()=>{setNavState(false)}} className='link' to="/quienes-somos">Quiénes somos</Link>

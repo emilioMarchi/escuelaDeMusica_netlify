@@ -23,8 +23,8 @@ export default function Header () {
 
     return(
         <div className='header'>
-            <Nav state={navState} />
-            <FontAwesomeIcon onClick={()=>{handlerNavState()}} className='nav-bar-icon' icon={faBars} />
+            <Nav state={navState} function={setNavState} />
+            <FontAwesomeIcon onClick={()=>{handlerNavState(); console.log(navState)}} className='nav-bar-icon' icon={faBars} />
         </div>
     )
 }

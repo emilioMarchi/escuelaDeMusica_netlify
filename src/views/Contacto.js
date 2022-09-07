@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 
 import './ComoAyudar.css'
 import './Contacto.css'
+import FormContact from '../components/formContact/FormContact' 
 
 export default function ContactoView (){
     
@@ -19,11 +20,27 @@ export default function ContactoView (){
                 </div>
                 <div class='contact-section container'>
                     <h2>¿Queres comunicarte con nosotros?</h2>
-                    <div>
-                        <div>
-                            
+                    <div className='contact-content container'>
+                        <div className='contact-form col'>
+                            <h3>Dejanos un mensaje, pronto nos estaremos comunicando</h3>
+                            <FormContact/>
                         </div>
-                        <div>form</div>
+                        <div className='contact-redes col '>
+                            <h3>Tambien nos podes encontrar a travez de nuestros portales</h3>
+                            <div>
+                                <div className='contact-social'>
+                                    <a href='https://www.instagram.com/loopangeloop/' title='Instagram' target='_blank'>
+                                        <img src='img/icons/ig-black.png' />
+                                    </a>
+                                    <a href='https://www.facebook.com/HandangeL-112863467005285/' title='Facebook' target='_blank'>
+                                        <img src='img/icons/fb-black.png' />
+                                    </a>
+                                    <a href='https://www.facebook.com/HandangeL-112863467005285/' title='Facebook' target='_blank'>
+                                        <img src='img/icons/wp-black.png' />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 
 import './ComoAyudar.css'
 import Payments from '../components/Payments/Payments'
-
+import FormContact from '../components/formContact/FormContact'
 
 export default function CAyudarView (){
     
@@ -30,10 +30,13 @@ export default function CAyudarView (){
                         
                             </div>
                         </div>
-                        {
-                            typeDonation === 'payment' || typeDonation === 'subscription' ? 
-                            <Payments type={typeDonation}/> : '' 
-                        }
+                            {
+                                typeDonation === 'payment' || typeDonation === 'subscription' ? 
+                                <Payments type={typeDonation}/> : 
+                                typeDonation === 'donation' ? 
+                                <FormContact/> : ''
+                            }
+        
                     </div>
                 </div>
             </div>

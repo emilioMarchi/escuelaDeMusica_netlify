@@ -24,6 +24,7 @@
 .payments-container .form {
     display: flex; flex-direction: column; justify-content: center;
     padding: 0 2rem;
+    margin: auto;
     margin-top: 2rem;
 }
 .payments-container .form input {

@@ -61,3 +61,21 @@
     border-radius: 0.2rem;
     cursor: pointer;
 }
+
+
+ form {
+    width: 50%;
+    text-align: center;
+}
+form .form-level {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+form .form-level input {
+    text-align: center;
+
+}
+form .form-level textarea {
+    text-align: center;
+} 

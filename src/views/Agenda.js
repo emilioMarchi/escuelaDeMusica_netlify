@@ -1,10 +1,14 @@
-import React, {useState} from 'react'
+import React, {useEffect} from 'react'
 
 import './ComoAyudar.css'
 import './Agenda.css'
 
 
 export default function ContactoView (){
+
+    useEffect(()=>{
+        window.scroll(0,0)
+    }, [])
 
     const AgendItem = () => {
         return(

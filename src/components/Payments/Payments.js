@@ -70,7 +70,7 @@ const Basic = ({path}) => (
             value={values.amount}
           />
           {errors.amount && touched.amount && errors.amount}
-          <button type="submit" disabled={isSubmitting}>
+          <button className='btn btn-dark' type="submit" disabled={isSubmitting}>
             Enviar
           </button>
         </form>
