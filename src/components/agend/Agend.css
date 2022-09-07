@@ -34,9 +34,16 @@
 }
 @media only screen and (max-width: 780px){ 
     .agend-slider {
-        width: 100%;
+        width: 100%; height: auto;
+        padding-top: 2rem;
+        margin-top: 1rem;
+        margin: 0 0;
     }
-    .agend-slider .carousel-header{
-        height: 16rem;
+    .carousel-indicators {
+        display: none;
+    }
+
+    .agend-item {
+        padding: 0 1rem;
     }
 }

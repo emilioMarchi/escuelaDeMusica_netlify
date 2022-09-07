@@ -35,3 +35,12 @@
     font-size: 16px;
     margin: 0;
 }
+
+@media only screen and (max-width: 780px) {
+    .payments-container {
+        padding: 0 1rem;
+    }
+    .payments-container .form {
+        padding: 0;
+    }
+}
