@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div >
-        <Router basename={basename}>
+        <Router >
           <Header/>
             <Routes>
                 <Route path="/" element={<InicioView />}/>
