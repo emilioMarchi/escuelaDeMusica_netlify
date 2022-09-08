@@ -22,7 +22,7 @@ const Basic = ({path}) => (
         setTimeout(() => {
             const data = values
             
-            axios.post(`http://localhost:8080/${path}`, data)
+            axios.post(`http://3.83.189.41:8080/${path}`, data)
             .then((res)=>{
                 const urlPayment = res.data.init_point
                 window.open(urlPayment)
