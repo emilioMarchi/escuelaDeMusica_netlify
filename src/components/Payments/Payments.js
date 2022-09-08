@@ -21,7 +21,7 @@ const Basic = ({path}) => (
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
             const data = values
-            
+            console.log('cambios')
             axios.post(`http://3.83.189.41:8080/${path}`, data)
             .then((res)=>{
                 const urlPayment = res.data.init_point
