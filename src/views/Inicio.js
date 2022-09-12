@@ -1,7 +1,7 @@
 import React, {Component, useState, useEffect} from 'react'
 import axios from 'axios'
 import Donation from '../components/donation/Donation'
-
+import { Gallery } from '../components/gallery/Gallery'
 import Article from '../components/article/Article'
 
 import './Inicio.css'
@@ -33,6 +33,7 @@ export const InicioView = ()=>{
                                 <h3>Bienvenidos. Gracias por visitarnos e interesarte por nuestro trabajo. Aquí podrás conocer quiénes somos, nuestra historia, nuestros proyectos y si te parece, contactarnos para trabajar juntos.</h3>                            
                         </div>
                         <Article/>
+                        <Gallery/>
                         <Donation/>
                     </div>
     )
