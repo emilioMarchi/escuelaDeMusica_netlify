@@ -35,12 +35,14 @@ const FormContact = () => {
       try{
         setFormInfo(values)
         if(values.userName !== '' && values.userEmail !== '' && values.userQuery !== '') {
+          
           await axios({
-            method: 'POST',
-            url:'https://server-app-agencia.herokuapp.com/',
+            method: 'post',
+            url:`${ process.env.PORT || 'http://localhost:8080'}/contact`,
             withCredentials: false,
             data: values
           }).then((res)=>{
+            console.log(res)
             setFormResponse(res.data.state)
             setFormInfo(values)
             resetForm()
