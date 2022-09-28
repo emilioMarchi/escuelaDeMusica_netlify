@@ -22,7 +22,7 @@ const Basic = ({path}) => (
         setTimeout(() => {
             const data = values
             console.log(`${process.env.PORT}`)
-            axios.post(` ${process.env.PORT}/api/${path}`, data)
+            axios.post(`/api/${path}`, data)
             .then((res)=>{
                 const urlPayment = res.data.init_point
                 window.open(urlPayment)
