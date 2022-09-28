@@ -38,7 +38,7 @@ const FormContact = () => {
           
           await axios({
             method: 'post',
-            url:`${ process.env.PORT || 'http://localhost:8080'}/contact`,
+            url:`${ process.env.PORT}/api/contact`,
             withCredentials: false,
             data: values
           }).then((res)=>{
