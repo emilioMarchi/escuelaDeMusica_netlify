@@ -21,7 +21,7 @@ const Basic = ({path}) => (
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
             const data = values
-            console.log('cambios')
+            console.log(`${process.env.PORT}`)
             axios.post(` ${process.env.PORT}/api/${path}`, data)
             .then((res)=>{
                 const urlPayment = res.data.init_point
