@@ -27,7 +27,9 @@
     margin-bottom: 3rem;
 }
 .q-somos div .information-section .item-section h2{
-    font-size: 28px;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
 }
 .q-somos div .information-section .item-section p {
     font-size: 22px;

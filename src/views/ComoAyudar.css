@@ -46,8 +46,11 @@
     text-align: center;
 }
 .donation-header h2 {
-    margin-bottom: 1rem;
-    padding: 0 25%;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+
+    padding: 0 10%;
 }
 .donation-header .donation-buttons {
     display: flex; align-items: center; justify-content: center;
