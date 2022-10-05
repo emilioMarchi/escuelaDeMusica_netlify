@@ -4,7 +4,10 @@ import Carousel from 'react-bootstrap/Carousel';
 import GalleryItem from './GalleryItem'
 import './gallery.css'
 
-const galleryImages = [{url: '/img/portada-1.webp'}, {url: '/img/portada-2.jpeg'}, {url: '/img/portada-3.webp'}, {url: '/img/portada-3.webp'}, {url: '/img/portada-2.jpeg'}, {url: '/img/portada-1.webp'}, {url: '/img/portada-2.jpeg'}, {url: '/img/portada-1.webp'}, ]
+const galleryImages = [{url: '/img/01.jpg'},{url: '/img/02.jpg'}, {url: '/img/03.jpg'},
+{url: '/img/04.jpg'},{url: '/img/05.jpg'},{url: '/img/06.jpg'},
+{url: '/img/07.jpg'},{url: '/img/08.jpg'},{url: '/img/09.jpg'},
+{url: '/img/10.jpg'},{url: '/img/11.jpg'},{url: '/img/12.jpg'},  ]
 
 export function Gallery () {
 

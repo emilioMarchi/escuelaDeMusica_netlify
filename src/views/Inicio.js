@@ -14,16 +14,20 @@ export const InicioView = ()=>{
         <div className='inicio-view'>
                         <div className='section-1  container'>
                             <div className='title col-sm'>
-                                <h1>Escuela de música barrial</h1>
+                                <div className='logo-title'>
+                                    <img className='logo' src='./img/logo.png' />
+                                    <h1>Escuela de<br/> música barrial</h1>
+
+                                </div>
                                 <div className='title-button-container'>
                                     <a href='#information-section' ><p>Conocer más</p></a>
                                     <a href='/como-colaborar'><p>Cómo colaborar</p></a>
                                 </div>
                             </div>
                             <div className='img-container col-sm'>
-                                <img className='img' src='./img/portada-1.webp' />
-                                <img className='img' src='./img/portada-2.jpeg' />
-                                <img className='img' src='./img/portada-3.webp' />
+                                <img className='img' src='./img/05.jpg' />
+                                <img className='img' src='./img/03.jpg' />
+                                <img className='img' src='./img/02.jpg' />
                             </div>
                         </div>
                         <div className='inicio-portada'>

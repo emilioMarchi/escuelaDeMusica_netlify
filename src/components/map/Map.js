@@ -20,7 +20,7 @@ export default function Map() {
             style={{height:'100%', width: '100%'}}
             zoom={15}
             center={center}
-            markers={[center]}
+            markers={[{lat:-31.6308448, lng:-60.7228647, name:'nombre'}]}
             mapContainerClassName='map-container'
             >
         </GoogleMap>

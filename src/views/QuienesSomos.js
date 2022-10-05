@@ -22,15 +22,15 @@ export default function QSomosView (){
 
                             <div  className='information-section  col'>
                                 <div className='item-section'>
-                                    <h2>Nuestra historia</h2>
-                                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino...</p>
+                                    <h2>Quiénes somos</h2>
+                                    <p>Un pilar fundamental para el funcionamiento de la escuela somos sus docentes y asistentes: estudiantes o docentes de música, músicos, vecinos del barrio y colaboradores: algunos nos encontramos todos los sábados por la mañana (por ahora) en el edificio del Centro de Día, de Villa del Parque, para acompañar al estudiantado en su desarrollo musical, que se materializa en la práctica instrumental o la iniciación musical para los más pequeños y pequeñas. <br/>
+                                        </p>
+                                    <p>
+                                    Un tercer soporte, está conformado por entrañables amigos y amigas de todas partes, que colaboran con su trabajo dentro de la Asociación Civil, Escuela de Arte Barrial, y una extensa red de madrinas y padrinos, la Asociación de Ex-alumnas del Colegio Calvario de Santa Fe, la Fundación Padre Catena, la Vecinal de Villa del Parque, Cáritas Parroquial de Villa del Parque, Canticuénticos, León Gieco, y tantos y tantas organizaciones y personas que siempre nos acompañan en todo momento.
+                                    </p>
                                     
                                 </div>
-                                <div className='item-section'>
-                                    <h2>Que hacemos</h2>
-                                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino...</p>
-                                    
-                                </div>
+                    
                             </div>
                             <Agend/>
                 </div>

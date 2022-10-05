@@ -8,8 +8,9 @@ export default function Article(){
                     
                     <div  className='information-section col'>
                         <div className='item-section'>
-                            <h2>Quiénes somos</h2>
-                            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino...</p>
+                            <h2>Nuestro propósito: acercar oportunidades a través de la música</h2>
+                            <p>La escuela de música barrial es un colectivo con un propósito en común: acercar oportunidades a través de la música. <br/> La razón de ser de la escuela, es su estudiantado, conformado por niñas, niños y adolescentes de Villa del Parque, donde se gestó, y en donde está funcionando desde entonces. También recibe aspirantes de barrios vecinos, del cordón oeste de nuestra ciudad: principalmente aquellas y aquellos a los que se les dificulta acceder al estudio de la música popular en otros centros educativos especializados oficiales o privados, por razones de distancia geográfica, social o económica...
+                            </p>
                             <a href='/quienes-somos'>Ver más</a>
                         </div>
                     </div>

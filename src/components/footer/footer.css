@@ -29,7 +29,7 @@
 
 }
 .footer .info-contact .info {
-    width: 30%;
+    
 }
 .footer .info-contact .info h5 {
     color: white;
@@ -57,10 +57,11 @@
         display: flex;
         flex-direction: column;
     }
-    .footer .info-contact .info {
+    .footer .info {
         width: 100%;
         height:10rem;
         padding-top: 1.5rem;
+        margin-bottom: 2rem;
     }
     
     .footer .info-contact .map {
