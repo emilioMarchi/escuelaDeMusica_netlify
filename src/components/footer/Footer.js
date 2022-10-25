@@ -17,7 +17,7 @@ export default function Footer() {
                         
                         <h5>Padre Catena 4200 - Santa Fe - 3000 - Santa Fe</h5>
                         <h5>escuelademusicabarrialsf@gmail.com</h5>
-                        <h5>Tel: 4-555-00-55</h5>
+                      
                     </div>
                     
                 </div>

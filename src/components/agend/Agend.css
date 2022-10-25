@@ -17,6 +17,10 @@
    font-size: 18px;
    color: rgb(91, 134, 125); 
 }
+
+.agend-slider .agend-content h3 {
+    font-size: 20px;
+}
 .agend-item {
     width: 100%; max-height: 15rem;
     padding: 0 3rem;

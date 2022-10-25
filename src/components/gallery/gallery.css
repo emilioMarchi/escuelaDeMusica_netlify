@@ -34,11 +34,18 @@
     justify-content: center;
 }
 .gallery-container .carousel-header .carousel-inner .carousel-item img {
-     max-height: 15rem;
-    margin: 0 0.5rem;
-    object-fit: contain;
+     max-height: 14rem;
+    margin: 0 0.2rem;
+    object-fit:fill;
     border-radius: 0.2rems;
     
+}
+@media only screen and (max-width: 1024px) {
+    .gallery-container .carousel-header .carousel-inner .carousel-item img {
+        max-height: 12rem;
+    
+       
+   }
 }
 
 @media only screen and (max-width: 780px) {
@@ -51,6 +58,8 @@
         justify-content: space-center;
     }
     .gallery-container .carousel-header .carousel-inner .carousel-item img {
+        
+        height: 33%;
         margin: 0.5rem 0;
         max-width: 100%;
     }

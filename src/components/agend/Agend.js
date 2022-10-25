@@ -7,6 +7,7 @@ import './Agend.css'
 export default function Agend () {
 
     const [index, setIndex] = useState(0);
+    const [agendData, setAgendData] = useState()
     
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
@@ -32,18 +33,26 @@ export default function Agend () {
     return(
         <div className='col-4 agend-slider'>
             <h2>Agenda</h2>
-            <Carousel className='carousel-header' activeIndex={index} onSelect={handleSelect} controls={false}>
-                <Carousel.Item className='carousel-item'>
-                    <AgendItem/>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <AgendItem/>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <AgendItem/>
-                </Carousel.Item>
-
-            </Carousel>
+            {
+                agendData ? 
+                <Carousel className='carousel-header' activeIndex={index} onSelect={handleSelect} controls={false}>
+                    <Carousel.Item className='carousel-item'>
+                        <AgendItem/>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <AgendItem/>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <AgendItem/>
+                    </Carousel.Item>
+                </Carousel>
+                : 
+                <>
+                    <div className='agend-content'>
+                        <h3>Todavía no hay agenda</h3>
+                    </div>
+                </>
+            }
 
         </div>
     )

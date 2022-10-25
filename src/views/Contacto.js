@@ -26,18 +26,16 @@ export default function ContactoView (){
                             <FormContact/>
                         </div>
                         <div className='contact-redes col '>
-                            <h3>Tambien nos podes encontrar a travez de nuestros portales</h3>
+                            <h3>Tambien nos podes encontrar en nuestras redes</h3>
                             <div>
                                 <div className='contact-social'>
-                                    <a href='https://www.instagram.com/loopangeloop/' title='Instagram' target='_blank'>
+                                    <a href='https://www.instagram.com/escuelademusicabarrial/' title='Instagram' target='_blank'>
                                         <img src='img/icons/ig-black.png' />
                                     </a>
-                                    <a href='https://www.facebook.com/HandangeL-112863467005285/' title='Facebook' target='_blank'>
+                                    <a href='https://es-la.facebook.com/EscuelaDeMusicaBarrial/' title='Facebook' target='_blank'>
                                         <img src='img/icons/fb-black.png' />
                                     </a>
-                                    <a href='https://www.facebook.com/HandangeL-112863467005285/' title='Facebook' target='_blank'>
-                                        <img src='img/icons/wp-black.png' />
-                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>

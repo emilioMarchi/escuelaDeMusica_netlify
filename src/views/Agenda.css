@@ -19,7 +19,7 @@
     margin-bottom: 1.5rem;
 }
 .c-ayudar-view .agend-container .agend-title h3 {
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 400;
 }
 
@@ -28,7 +28,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content:  center;
+    margin-top: 3rem;
     
+}
+
+.c-ayudar-view .agend-container .items-container h3 {
+    font-size: 22px;
 }
 .c-ayudar-view .agend-container .items-container .agend-item{
     background-color: rgb(174, 219, 202);

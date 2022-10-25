@@ -42,7 +42,7 @@ const FormContact = () => {
             withCredentials: false,
             data: values
           }).then((res)=>{
-            console.log(res)
+            
             setFormResponse(res.data.state)
             setFormInfo(values)
             resetForm()

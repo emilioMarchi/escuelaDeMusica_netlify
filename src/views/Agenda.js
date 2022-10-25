@@ -1,10 +1,12 @@
-import React, {useEffect} from 'react'
+import React, {useState,useEffect} from 'react'
 
 import './ComoAyudar.css'
 import './Agenda.css'
 
 
 export default function ContactoView (){
+
+    const [agendData, setAgendData] = useState()
 
     useEffect(()=>{
         window.scroll(0,0)
@@ -41,13 +43,21 @@ export default function ContactoView (){
                         <h2>Agenda</h2>
                         <h3>Aca vas a poder encontrar nuestra agenda de actividades y novedades</h3>
                     </div>
-                    <div className='items-container container'>
-                        <AgendItem/>
-                        <AgendItem/>
-                        <AgendItem/>
-                        <AgendItem/>
-                        <AgendItem/>
-                    </div>
+                    {
+                        agendData ? 
+                        <div className='items-container container'>
+                            {
+                                agendData.map((dataItem)=>{
+                                    return <AgendItem data={dataItem} />
+                                })
+                            }
+                        </div> : 
+                        <>
+                            <div className='items-container container'>
+                                <h3>Todavía no hay agenda, consulta en otro momento</h3>
+                            </div>
+                        </>
+                    }
                 </div>
             </div>
         )
