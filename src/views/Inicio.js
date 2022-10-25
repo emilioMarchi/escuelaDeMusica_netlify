@@ -25,9 +25,7 @@ export const InicioView = ()=>{
                                 </div>
                             </div>
                             <div className='img-container col-sm'>
-                                <img className='img' src='./img/05.jpg' />
-                                <img className='img' src='./img/03.jpg' />
-                                <img className='img' src='./img/02.jpg' />
+                                
                             </div>
                         </div>
                         <div className='inicio-portada'>

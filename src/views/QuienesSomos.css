@@ -3,6 +3,7 @@
     display: flex;
     
     background-image: url('/public/img/quienes-somos.webp');
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     
