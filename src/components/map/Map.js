@@ -15,13 +15,17 @@ export default function Map() {
     return(
         
         <GoogleMap
+            onClick={()=>{
+                alert('function')
+            }}
             
             apiKey={'AIzaSyDgBV7FsYzoXGjYVOzg_zAG4YIS19KOE0I'}
             style={{height:'100%', width: '100%'}}
             zoom={15}
             center={center}
-            markers={[{lat:-31.6308448, lng:-60.7228647, name:'nombre'}]}
+            markers={[{lat:-31.6308286, lng:-60.7206793, title:'nombre'}]}
             mapContainerClassName='map-container'
+            src='https://goo.gl/maps/n7R3n76aqGM2Dvzf8'
             >
         </GoogleMap>
 
