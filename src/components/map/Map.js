@@ -2,7 +2,7 @@ import React from 'react'
 import GoogleMap from 'simple-react-google-maps'
 
 export default function Map() {
-    const center = {lat:-31.6308448, lng:-60.7228647}
+    const center = {lat:-31.6308286, lng:-60.7206793}
 
     const Marker = () => {
         return(
@@ -21,11 +21,11 @@ export default function Map() {
             
             apiKey={'AIzaSyDgBV7FsYzoXGjYVOzg_zAG4YIS19KOE0I'}
             style={{height:'100%', width: '100%'}}
-            zoom={15}
+            zoom={18}
             center={center}
-            markers={[{lat:-31.6308286, lng:-60.7206793, title:'nombre'}]}
+            markers={[{lat:-31.6308286, lng:-60.7206793, namespace:'nombre'}]}
             mapContainerClassName='map-container'
-            src='https://goo.gl/maps/n7R3n76aqGM2Dvzf8'
+            
             >
         </GoogleMap>
 

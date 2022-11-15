@@ -28,8 +28,23 @@
     display: flex;
 
 }
-.footer .info-contact .info {
+.footer .info-contact .info .location-link {
+    display: flex; align-items: center;
+    padding: 1rem; margin: 0;
+    text-decoration: none;
+    font-size: 24px;
+    color: rgb(7, 251, 170);
+}
+.footer .info-contact .info .location-link:hover{
+    color: rgb(24, 203, 235);
     
+}
+.footer .info-contact .info .location-link .location-icon{
+    
+}
+.footer .info-contact .info .location-link p {
+    padding: 0rem; margin: 0;
+    margin-left: 1rem;
 }
 .footer .info-contact .info h5 {
     color: white;
