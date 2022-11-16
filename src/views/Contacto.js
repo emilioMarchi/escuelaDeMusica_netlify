@@ -23,7 +23,7 @@ export default function ContactoView (){
                     <div className='contact-content container'>
                         <div className='contact-form col'>
                             <h3>Dejanos un mensaje, pronto nos estaremos comunicando</h3>
-                            <FormContact/>
+                            <FormContact type={'contact'}/>
                         </div>
                         <div className='contact-redes col '>
                             <h3>Tambien nos podes encontrar en nuestras redes</h3>

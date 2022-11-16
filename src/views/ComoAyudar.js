@@ -34,7 +34,7 @@ export default function CAyudarView (){
                                 typeDonation === 'payment' || typeDonation === 'subscription' ? 
                                 <Payments type={typeDonation}/> : 
                                 typeDonation === 'donation' ? 
-                                <FormContact/> : ''
+                                <FormContact type={'donation'} /> : ''
                             }
         
                     </div>

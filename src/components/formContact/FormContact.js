@@ -3,7 +3,7 @@ import { useFormik } from 'formik';
 import axios from 'axios'
 import $ from 'jquery'
 
-const FormContact = () => {
+const FormContact = ({type}) => {
     
     const [formInfo, setFormInfo] = useState()
     const [formResponse, setFormResponse] = useState()
@@ -30,19 +30,20 @@ const FormContact = () => {
       userName: '',
       userEmail: '',
       userQuery: '',
+      queryType: type,
     },
     onSubmit: async (values, {resetForm}) => {
       try{
         setFormInfo(values)
-        if(values.userName !== '' && values.userEmail !== '' && values.userQuery !== '') {
+        console.log(values)
+        if(values.userName !== '' && values.userEmail !== '' && values.userQuery !== '' && values.queryType !== '') {
           
           await axios({
             method: 'post',
-            url:`https://api.escuelademusicabarrial.ar/contact`,
+            url:`http://api.escuelademusicabarrial.ar/contact`,
             withCredentials: false,
             data: values
           }).then((res)=>{
-            
             setFormResponse(res.data.state)
             setFormInfo(values)
             resetForm()
