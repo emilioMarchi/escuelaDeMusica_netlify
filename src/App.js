@@ -14,7 +14,7 @@ import QSomosView from "./views/QuienesSomos";
 import AgendaView from "./views/Agenda";
 import CAyudarView from "./views/ComoAyudar";
 import ContactoView from "./views/Contacto";
-import GaleriaView from "./views/Galeria";
+import {GaleriaView} from "./views/Galeria";
 import NotFoundPage from "./views/NotFoundPage";
 import Admin from "./views/Admin";
 

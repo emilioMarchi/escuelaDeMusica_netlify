@@ -22,6 +22,9 @@ export default function Nav ({state, setNavState}) {
                         <Link onClick={()=>{setNavState(false)}} className='link' to="/agenda">Agenda</Link>
                     </li>
                     <li>
+                        <Link onClick={()=>{setNavState(false)}} className='link' to="/galeria">Galería</Link>
+                    </li>
+                    <li>
                         <Link onClick={()=>{setNavState(false)}} className='link' to="/contacto">Contacto</Link>
                     </li>
                 </ul>
