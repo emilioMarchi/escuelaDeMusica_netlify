@@ -17,7 +17,7 @@ import ContactoView from "./views/Contacto";
 import {GaleriaView} from "./views/Galeria";
 import NotFoundPage from "./views/NotFoundPage";
 import Admin from "./views/Admin";
-
+import { GalleryProvider } from "./context/galleryContext/GalleryContext";
 import './App.css';
 
 
@@ -28,6 +28,7 @@ function App() {
 
   return (
     <div >
+      <GalleryProvider>
         <Router >
           <Header/>
             <Routes>
@@ -42,8 +43,8 @@ function App() {
             </Routes>
           <Footer/>
         </Router>
-          
-      </div>
+      </GalleryProvider>  
+    </div>
   );
 }
 

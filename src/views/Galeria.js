@@ -1,11 +1,14 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
 import { PhotoGallery } from '../components/photoGallery/PhotoGallery'
 import './Galeria.css'
+import { GalleryContext } from '../context/galleryContext/GalleryContext'
 
 export const GaleriaView = () => {
 
     const [navState, setNavState] = useState('foto')
-
+    const  [viewer, setViewer, galleryView, setGalleryView, 
+        galleryList, setGalleryList, imgSelected, setImgSelected] = useContext(GalleryContext)
+    
         return(
             <div className='galeria-view'>
                 <div className='galeria'>
@@ -25,7 +28,7 @@ export const GaleriaView = () => {
                     <div className='galeria-content'>
                         {
                             navState === 'foto' ?
-                            <PhotoGallery/> :
+                            <PhotoGallery galleryList={galleryList} /> :
                             navState === 'video' ?
                             'VIDEO' : ''
                         }
