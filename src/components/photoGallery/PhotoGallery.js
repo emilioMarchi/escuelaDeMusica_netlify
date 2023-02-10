@@ -1,4 +1,4 @@
-import { PhotoItem } from './PhotoItem'
+import CardItem from './CardItem'
 import './photoGallery.css'
 import $ from 'jquery'
 
@@ -13,7 +13,7 @@ export const PhotoGallery = ({galleryList}) => {
         <div className='photo-gallery-container'>
             {
                 galleryList.map((item)=>{
-                    return <PhotoItem id={item.id} url={item.url}/>
+                    return <CardItem id={item.id} imageUrl={item.url}/>
                 })
             }
         </div>

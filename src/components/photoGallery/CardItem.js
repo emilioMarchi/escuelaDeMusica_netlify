@@ -1,0 +1,53 @@
+import React, { useState } from 'react';
+import './cardItem.css'
+
+const CardItem = ({ imageUrl }) => {
+  const [opacity, setOpacity] = useState(1);
+  const [filterImg, setFilterImg] = useState('grayscale(80%)')
+  const [fontSize, setFontSize] = useState(24)
+  const [fontColor, setFontColor] = useState('rgb(238, 255, 253)')
+  
+  const handleMouseEnter = () => {
+    setFontSize(26)
+    setOpacity(0.8);
+    setFilterImg('grayscale(0%)')
+  };
+
+  const handleMouseLeave = () => {
+    setOpacity(1);
+    setFontSize(24)
+  };
+
+  return (
+    <div className='card-item'
+    style={{
+      width: '350px',
+      height: '200px',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      cursor:'pointer',
+    }}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <p style={{ fontSize: `${fontSize}px`, color: fontColor, transition: 'fontSize 1s',
+                    cursor:'pointer', fontWeight: '700', zIndex: '50',
+                    position: 'absolute',
+    }}>Ver más</p>
+      <div
+        style={{
+          width: '100%',
+          height: '100%',
+          backgroundImage: `url(${imageUrl})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          filter: filterImg,
+          transition:'filter 1s',
+        }}
+      />
+    </div>
+  );
+};
+
+export default CardItem;
