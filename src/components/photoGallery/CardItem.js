@@ -3,7 +3,7 @@ import './cardItem.css'
 import { GalleryContext } from '../../context/galleryContext/GalleryContext'
 
 
-const CardItem = ({ imageUrl }) => {
+const CardItem = ({ id, imageUrl }) => {
   const [opacity, setOpacity] = useState(1);
   const [filterImg, setFilterImg] = useState('grayscale(80%)')
   const [fontSize, setFontSize] = useState(24)
@@ -12,7 +12,7 @@ const CardItem = ({ imageUrl }) => {
   const [viewer, setViewer, galleryView, setGalleryView, 
     galleryList, setGalleryList, imgSelected, setImgSelected] = useContext(GalleryContext)
 
-  
+    
   const handleMouseEnter = () => {
     setFontSize(26)
     setOpacity(0.8);
@@ -28,6 +28,8 @@ const CardItem = ({ imageUrl }) => {
 
   return (
     <div className='card-item'
+    key={id}
+    id={id}
     style={{
       width: '350px',
       height: '200px',
@@ -38,8 +40,11 @@ const CardItem = ({ imageUrl }) => {
     }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      onClick={()=>{
+      onClick={(e)=>{
+
         setViewer(true)
+        setImgSelected(id)
+        
       }}
       
     >

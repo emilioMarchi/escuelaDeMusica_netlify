@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, {useContext, useRef} from 'react'
 import CardItem from './CardItem'
 import './photoGallery.css'
 import $ from 'jquery'
@@ -7,17 +7,17 @@ import {Viewer} from '../viewer/Viewer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
+
+
 export const PhotoGallery = () => {
     
     const [viewer, setViewer, galleryView, setGalleryView, 
         galleryList, setGalleryList, imgSelected, setImgSelected] = useContext(GalleryContext)
     
-      
-
     return (
         <div className='photo-gallery-container'
-            onClick={()=>{
-                
+            onClick={(e)=>{
+
             }}
         >
 
@@ -43,9 +43,10 @@ export const PhotoGallery = () => {
             }
             {
                 galleryList.map((item)=>{
+                    const id = item.id
                     return (
                         <>
-                            <CardItem id={item.id} imageUrl={item.url} 
+                            <CardItem  id={id} imageUrl={item.url} 
                              />
                         </>
                     )

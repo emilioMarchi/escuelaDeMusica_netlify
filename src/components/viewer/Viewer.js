@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, {useState, useContext, useEffect} from 'react'
 import './viewer.css'
 import Carousel from 'react-bootstrap/Carousel';
 import { GalleryContext } from '../../context/galleryContext/GalleryContext';
@@ -6,20 +6,33 @@ import { GalleryContext } from '../../context/galleryContext/GalleryContext';
 
 export const Viewer = () => {
     
+    const [newGalleryList, setNewGalleryList] = useState([])
     const [viewer, setViewer, galleryView, setGalleryView, 
         galleryList, setGalleryList, imgSelected, setImgSelected] = useContext(GalleryContext)
     
     const filterList = () => {
-      const filterList = galleryList.slice(0,4)
-      console.log(filterList)
+
+      const max = galleryList.length  
+      
+      const firstArray = galleryList.slice(imgSelected-1, max)
+      const secondArray = galleryList.slice(0, imgSelected-1)
+
+      const newArray = firstArray.concat(secondArray)
+      setNewGalleryList(newArray)
+
+
     }
-    filterList()
-    console.log(galleryList.length)
+    
+    useEffect(()=>{
+      filterList()
+    }, [])
+
   return (
       <>
     <Carousel className='viewer-carousel'>
       {
-        galleryList.map((item)=>{
+        newGalleryList.length>0 ?
+        newGalleryList.map((item)=>{
 
               return(
                 <Carousel.Item className='viewer-item' key={item.id}>
@@ -28,8 +41,8 @@ export const Viewer = () => {
                       </div>
                     </Carousel.Item>
               )
-            })
-          }
+            }) : ''
+          } 
     </Carousel>
           
     </>
