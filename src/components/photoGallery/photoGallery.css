@@ -5,3 +5,6 @@
     padding: 1rem 0 1rem 0;
     
 }
+.photo-gallery-container .exit-item svg path{
+    color: turquoise;
+}

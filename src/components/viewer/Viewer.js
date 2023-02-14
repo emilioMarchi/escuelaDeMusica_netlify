@@ -1,20 +1,40 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import './viewer.css'
+import Carousel from 'react-bootstrap/Carousel';
+import { GalleryContext } from '../../context/galleryContext/GalleryContext';
+
+
 export const Viewer = () => {
-    return(
-        <div className='viewer-container'
-            style={{
-                width:'100%',
-                height:'100%',
-                backgroundColor:'black',
-                opacity: '65%',
-                position: 'fixed',
-                top:'0',
-                left:'0',
-                zIndex:100,
-            }}
-        >
-            VIEWER
-        </div>
-    )
+    
+    const [viewer, setViewer, galleryView, setGalleryView, 
+        galleryList, setGalleryList, imgSelected, setImgSelected] = useContext(GalleryContext)
+    
+    const filterList = () => {
+      const filterList = galleryList.slice(0,4)
+      console.log(filterList)
+    }
+    filterList()
+    console.log(galleryList.length)
+  return (
+      <>
+    <Carousel className='viewer-carousel'>
+      {
+        galleryList.map((item)=>{
+
+              return(
+                <Carousel.Item className='viewer-item' key={item.id}>
+                      <div className='item-img'>
+                          <img src={`${item.url}`} />
+                      </div>
+                    </Carousel.Item>
+              )
+            })
+          }
+    </Carousel>
+          
+    </>
+  );
 }
+
+
+

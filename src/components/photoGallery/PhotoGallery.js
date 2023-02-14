@@ -4,10 +4,8 @@ import './photoGallery.css'
 import $ from 'jquery'
 import { GalleryContext } from '../../context/galleryContext/GalleryContext'
 import {Viewer} from '../viewer/Viewer'
-const galleryImages = [{url: '/img/01.jpg', id:1},{url: '/img/02.jpg', id:2}, {url: '/img/03.jpg', id:3},
-{url: '/img/04.jpg', id:4},{url: '/img/05.jpg', id:5},{url: '/img/06.jpg', id:6},
-{url: '/img/07.jpg', id:7},{url: '/img/08.jpg', id:8},{url: '/img/09.jpg', id:9},
-{url: '/img/10.jpg', id:10},{url: '/img/11.jpg', id:11},{url: '/img/12.jpg', id:12}, ]
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
 export const PhotoGallery = () => {
     
@@ -17,13 +15,40 @@ export const PhotoGallery = () => {
       
 
     return (
-        <div className='photo-gallery-container'>
+        <div className='photo-gallery-container'
+            onClick={()=>{
+                
+            }}
+        >
+
             {
-                <Viewer/>
+                viewer === true ?
+                <>
+                    <FontAwesomeIcon icon={faArrowLeft} className='exit-icon' 
+                    onClick={()=>{
+                        if (viewer === true) {
+                            setViewer(false)
+                        } else {}
+                    }}
+                    style={{
+                        color:'white', zIndex:'150', position:'fixed',
+                        top:'5vh', left:'5vw', borderRadius:'5rem', height:'1.5rem', width:'1.5rem',
+                        padding:'0.5rem', backgroundColor:'black', cursor:'pointer',
+                        
+
+                    }} />
+                    <Viewer style={{width:'100%', height:'100%', backgrounColor:'black',}}/>
+                </> 
+                : ''
             }
             {
                 galleryList.map((item)=>{
-                    return <CardItem id={item.id} imageUrl={item.url}/>
+                    return (
+                        <>
+                            <CardItem id={item.id} imageUrl={item.url} 
+                             />
+                        </>
+                    )
                 })
             }
         </div>
