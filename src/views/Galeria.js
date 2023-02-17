@@ -2,6 +2,7 @@ import React, {useState, useContext} from 'react'
 import { PhotoGallery } from '../components/photoGallery/PhotoGallery'
 import './Galeria.css'
 import { GalleryContext } from '../context/galleryContext/GalleryContext'
+import { VideoGallery } from '../components/videoGallery/VideoGallery'
 
 export const GaleriaView = () => {
 
@@ -30,7 +31,7 @@ export const GaleriaView = () => {
                             navState === 'foto' ?
                             <PhotoGallery galleryList={galleryList} /> :
                             navState === 'video' ?
-                            'VIDEO' : ''
+                            <VideoGallery /> : ''
                         }
                     </div>
                 </div>
