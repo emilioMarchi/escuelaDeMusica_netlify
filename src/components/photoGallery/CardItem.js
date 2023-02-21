@@ -1,20 +1,23 @@
 import React, { useState, useContext } from 'react';
 import './cardItem.css'
 import { GalleryContext } from '../../context/galleryContext/GalleryContext'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faImage } from '@fortawesome/free-solid-svg-icons'
 
 const CardItem = ({ id, imageUrl }) => {
   const [opacity, setOpacity] = useState(1);
   const [filterImg, setFilterImg] = useState('grayscale(80%)')
   const [fontSize, setFontSize] = useState(24)
   const [fontColor, setFontColor] = useState('rgb(238, 255, 253)')
+  
 
   const [viewer, setViewer, galleryView, setGalleryView, 
     galleryList, setGalleryList, imgSelected, setImgSelected] = useContext(GalleryContext)
 
     
   const handleMouseEnter = () => {
-    setFontSize(26)
+    setFontSize(28)
+    setFontColor('turquoise')
     setOpacity(0.8);
     setFilterImg('grayscale(0%)')
     
@@ -23,6 +26,7 @@ const CardItem = ({ id, imageUrl }) => {
   const handleMouseLeave = () => {
     setOpacity(1);
     setFontSize(24)
+    setFontColor('rgb(238, 255, 253)')
     
   };
 
@@ -48,10 +52,13 @@ const CardItem = ({ id, imageUrl }) => {
       }}
       
     >
-      <p style={{ fontSize: `${fontSize}px`, color: fontColor, transition: 'fontSize 1s',
-                    cursor:'pointer', fontWeight: '700', zIndex: '50',
-                    position: 'absolute',
-    }}>Ver más</p>
+      
+    <FontAwesomeIcon icon={faImage}
+        style={{ 
+        cursor:'pointer', fontWeight: '700', zIndex: '50',
+        position: 'absolute', fontSize:`${fontSize}`, color:`${fontColor}`,
+        transition: 'fontSize fontColor 1s',
+      }}/>
       <div
         style={{
           width: '100%',

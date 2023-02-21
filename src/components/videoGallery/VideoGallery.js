@@ -15,7 +15,7 @@ export const VideoGallery = () => {
      
     return (
         <div className='photo-gallery-container'
-            
+        onClick={()=>{console.log('click')}}
         >
 
             {

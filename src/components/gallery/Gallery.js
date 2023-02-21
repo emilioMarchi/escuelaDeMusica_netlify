@@ -55,6 +55,7 @@ export function Gallery () {
         <div className='photo-gallery'>
         
             <div className='gallery-container'>
+                <a href='/galeria'>Ver galería</a>
                 <Carousel className='carousel-header' controls={false}>
                     {
                         arraysGallery!==undefined ?

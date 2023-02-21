@@ -40,6 +40,15 @@
     border-radius: 0.2rems;
     
 }
+.gallery-container a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    background-color: rgb(72, 158, 122);
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+
+}
 @media only screen and (max-width: 1024px) {
     .gallery-container .carousel-header .carousel-inner .carousel-item img {
         max-height: 12rem;

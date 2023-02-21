@@ -1,5 +1,4 @@
 import React, { useState, useContext } from 'react';
-
 import { GalleryContext } from '../../context/galleryContext/GalleryContext'
 
 
@@ -36,22 +35,29 @@ const VideoItem = ({ id, url }) => {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      cursor:'pointer',
+      cursor:'none',
+      zIndex:'100',
     }}
-    onClick={()=>{console.log('click')}}
+
+      onClick={()=>{setViewer(true)}}
     >
     
       
       <iframe src={`${url}`}
+        
         style={{
             width: '100%',
             height: '100%',
             cursor: 'none',
-            
+            zIndex:'50',
         }}
-        title="YouTube video player" frameborder="0" 
-        allow="allowfullscreen webkitallowfullscreen mozallowfullscreen" 
-        fs='1' >
+        title="YouTube video player" frameBorder="0" fs="1" 
+        allowfullscreen="allowfullscreen"
+        mozallowfullscreen="mozallowfullscreen" 
+        msallowfullscreen="msallowfullscreen" 
+        oallowfullscreen="oallowfullscreen" 
+        webkitallowfullscreen="webkitallowfullscreen"
+         >
             
         </iframe>
         
