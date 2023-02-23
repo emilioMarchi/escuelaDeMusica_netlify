@@ -40,7 +40,7 @@ const FormContact = ({type}) => {
           
           await axios({
             method: 'post',
-            url:`http://api.escuelademusicabarrial.ar/contact`,
+            url:`https://api.escuelademusicabarrial.ar/contact`,
             withCredentials: false,
             data: values
           }).then((res)=>{
