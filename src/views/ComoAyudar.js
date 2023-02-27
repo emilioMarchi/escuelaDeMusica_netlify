@@ -4,10 +4,10 @@ import './ComoAyudar.css'
 import Payments from '../components/Payments/Payments'
 import FormContact from '../components/formContact/FormContact'
 
+
 export default function CAyudarView (){
     
-    const [typeDonation, setTypeDonation] = useState()
-    
+  
     useEffect(()=>{
         window.scroll(0,0)
     }, [])
@@ -21,22 +21,45 @@ export default function CAyudarView (){
                 </div>
                 <div>
                     <div className='donation-container'>
-                        <div className='donation-header'>
-                            <h2>Si te interesa colaborar, a continuacion te dejamos opciones de como podes hacerlo</h2>
-                            <div className='donation-buttons'>
-                                <a onClick={()=>{setTypeDonation('donation')}}>Quiero donar un instrumento</a>
-                                <a onClick={()=>{setTypeDonation('payment')}}>Quiero hacer una donacion voluntaria</a>
-                                <a onClick={()=>{setTypeDonation('subscription')}}>Quiero ser socio voluntario del proyecto</a>
-                        
+                        <div className='video-container'>
+                            <h2>¿Querés saber cómo colaborar?</h2>
+                            <h3>A continuación te dejamos un video explicativo acerca de cómo podes colaborar con nosotros</h3>
+                            <div className='frame'>
+                                <iframe src={``}
+                                    
+                                    style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        cursor: 'none',
+                                        zIndex:'0',
+                                    }}
+                                    title="YouTube video player" frameBorder="0" fs="1" 
+                                    allowfullscreen="allowfullscreen"
+                                    mozallowfullscreen="mozallowfullscreen" 
+                                    msallowfullscreen="msallowfullscreen" 
+                                    oallowfullscreen="oallowfullscreen" 
+                                    webkitallowfullscreen="webkitallowfullscreen"
+                                >
+                                        
+                                </iframe>
+                                
                             </div>
                         </div>
-                            {
-                                typeDonation === 'payment' || typeDonation === 'subscription' ? 
-                                <Payments type={typeDonation}/> : 
-                                typeDonation === 'donation' ? 
-                                <FormContact type={'donation'} /> : ''
-                            }
-        
+                        <div className='payment-options-container'>
+                            <h2>Las opciones para colaborar con nosotros son la siguientes</h2>
+                            <Payments /> 
+                            <div className='transfer-info-container'>
+                                <h3>Para colaborar mediante una transferencia bancaria podes utilizar los siguientes datos</h3>
+                                <div className='transfer-info'>
+
+                                    <h3>Cuenta. 1/10693409 – Cuenta Cte especial Pjur – Multimoneda</h3>
+                                    <h3>Titular: Asociación Civil Escuel – CUIT N.º 30-71507183-1</h3>
+                                    <h3>CBU Pesos: 4260001/9-0020010693409/2</h3>
+                                    <h3>CBU U$S:    4260001/9-0022010693409/0</h3>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>

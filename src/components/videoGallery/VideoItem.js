@@ -49,7 +49,7 @@ const VideoItem = ({ id, url }) => {
             width: '100%',
             height: '100%',
             cursor: 'none',
-            zIndex:'50',
+            zIndex:'0',
         }}
         title="YouTube video player" frameBorder="0" fs="1" 
         allowfullscreen="allowfullscreen"

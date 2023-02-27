@@ -7,102 +7,117 @@
 }
 
 
-.title {
-    align-items: center;
-    justify-content: center;
-}
-
-.donation {
-    text-align: center;
-    width: 100%; height: 100%;
-    padding: 2rem 25%;
-    margin: 2rem 0;
-    border: solid 2px rgb(109, 168, 135);
-}
-.donation h2 {
-    font-size: 28px;
-    margin-bottom: 2rem;
-}
-.donation a {
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 0.2rem;
-    background-color: rgb(72, 158, 122);
-}
-
 .donation-container {
     width: 100%; height: 100%;
+    padding: 1rem;
+    padding-top: 3rem;
+    display: flex; flex-direction: row;
+
+}
+
+.donation-container .video-container {
+    width: 50%; min-height: 100%;
     display: flex; flex-direction: column;
     align-items: center;
 }
-.donation-header {
-    width: 100%; height: 100%;
-    padding: 2rem 0;
-    margin: 2rem 0 2rem 0   ;
-    display: flex; flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.donation-header h2 {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-
-    padding: 0 10%;
-}
-.donation-header .donation-buttons {
-    display: flex; align-items: center; justify-content: center;
-}
-.donation-header .donation-buttons a {
-    padding: 0.5rem 0.5rem;
-    margin: 0 0.5rem;
-    background-color: rgb(84, 170, 127);
-    color: white;
-    font-size: 18px;
-    border-radius: 0.2rem;
-    cursor: pointer;
-}
-
-
- form {
-    width: 50%;
-    text-align: center;
-}
-form .form-level {
-    display: flex;
-    flex-direction: column;
+.donation-container .video-container h2 {
+    font-size: 24px; font-weight: 700;
+    padding: 0 4rem;
     margin-bottom: 1rem;
-}
-form .form-level input {
     text-align: center;
-
-}
-form .form-level textarea {
+}.donation-container .video-container h3 {
+    font-size: 20px;
+    padding: 0 4rem;
+    margin-bottom: 2rem;
     text-align: center;
-} 
+}
+.donation-container .video-container .frame{
+    height: 35%;
+    width: 100%;
+    padding: 1rem;
+}
+.donation-container .payment-options-container {
+    width: 50%; height: 100%;
+    display: flex; flex-direction: column;
+    align-items: center;
+}
+.donation-container .payment-options-container h2 {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0 4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
 
-
+.donation-container .payment-options-container .transfer-info-container {
+    display: flex; flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 2rem;
+    border: solid 2px rgb(83, 145, 124);
+    border-radius: 0.2rem;
+    
+}
+.donation-container .payment-options-container .transfer-info-container h3 {
+    font-size: 20px;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+.donation-container .payment-options-container .transfer-info-container .transfer-info {
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 1rem;
+    background-color: rgb(92, 124, 113);
+    color: white;
+    border-radius: 0.2rem;
+}
+.donation-container .payment-options-container .transfer-info-container .transfer-info h3{
+    margin: 0; padding: 0.5rem;
+    font-size: 18px; 
+    font-weight: 100;
+}
 @media only screen and (max-width: 780px) {
-    .donation {
-        padding: 2rem 10%;
+    .donation-container {
+        width: 100%; height: 100%;
+        padding: 1rem;
+        padding-top: 3rem;
+        display: flex; flex-direction: column;
+    
     }
-    .donation-header h2 {
-        padding: 0 2rem;
+    .donation-container .video-container {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .donation-container .video-container .frame {
+        height: 20rem; width: 75%;
     }
 
-
-    .donation-header .donation-buttons {
-        flex-direction: column;
+    .donation-container .payment-options-container {
         width: 100%;
     }
-    .donation-header .donation-buttons a {
-        width: 90%;
-        margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .donation-container .video-container h2 {
+        padding: 0;
+    }
+    .donation-container .video-container h3 {
+        padding: 0;
     }
 
-    form {
-        width: 66%;
+    .donation-container .video-container .frame {
+        width: 100%; height: auto;
     }
+
+
+    .donation-container .payment-options-container h2 {
+        padding: 0;
+    }
+
+
+    .donation-container .payment-options-container .transfer-info-container h3 {
+        padding: 0;
+    } 
 }
