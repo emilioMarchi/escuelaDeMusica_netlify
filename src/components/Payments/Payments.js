@@ -6,7 +6,7 @@ import axios from 'axios'
 const Basic = ({path}) => (
   <div>
     <Formik
-      initialValues={{ name: '', email: '', amount: '500' }}
+      initialValues={{ name: '', email: '', amount:500 }}
       validate={values => {
         const errors = {};
         if (!values.email) {
@@ -20,7 +20,7 @@ const Basic = ({path}) => (
       }}
       onSubmit={(values, { setSubmitting }) => {
         
-       
+          console.log(path)
           setTimeout(() => {
               const data = values
               console.log(values)
@@ -66,7 +66,7 @@ const Basic = ({path}) => (
           />
           {errors.email && touched.email && errors.email}
           <h4>Selecciones el monto con el que desea colaborar</h4>
-          <select id="cars" name="cars"
+          <select 
             type="number"
             name="amount"
             onChange={handleChange}
@@ -74,11 +74,11 @@ const Basic = ({path}) => (
             value={values.amount}
 
           >
-            <option value="100">$100</option>
-            <option value="300">$300</option>
-            <option value="500">$500</option>
-            <option value="700">$700</option>
-            <option value="1000">$1000</option>         
+            <option value={100}>$100</option>
+            <option value={300}>$300</option>
+            <option value={500}>$500</option>
+            <option value={700}>$700</option>
+            <option value={1000}>$1000</option>         
           </select>
           
           {errors.amount && touched.amount && errors.amount}
