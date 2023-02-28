@@ -3,10 +3,10 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import './Payments.css'
 import axios from 'axios'
 
-const Basic = ({path}) => (
+const Basic = ({path, amount}) => (
   <div>
     <Formik
-      initialValues={{ name: '', email: '', amount:500 }}
+      initialValues={{ name: '', email: '', amount:parseInt(amount) }}
       validate={values => {
         const errors = {};
         if (!values.email) {
@@ -21,9 +21,10 @@ const Basic = ({path}) => (
       onSubmit={(values, { setSubmitting }) => {
         
           console.log(path)
+          values.amount=parseInt(values.amount)
+          console.log(values)
           setTimeout(() => {
               const data = values
-              console.log(values)
               console.log(`${process.env.PORT}`)
               axios.post(`https://api.escuelademusicabarrial.ar/${path}`, data)
               .then((res)=>{
@@ -101,6 +102,7 @@ const Basic = ({path}) => (
 export default function Payments () {
 
   const [typeDonation, setTypeDonation] = useState()
+  const [amount, setAmount] = useState(500)
     
 
     return(
@@ -121,7 +123,7 @@ export default function Payments () {
             
             <div className='payment-type'>
                
-                <Basic path={typeDonation}/>
+                <Basic amount={amount} path={typeDonation}/>
             </div>
         </div>
     )
