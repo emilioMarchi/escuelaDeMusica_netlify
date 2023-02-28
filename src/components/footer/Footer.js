@@ -21,9 +21,20 @@ export default function Footer() {
 
                             <p>Ver en mapa</p>
                         </a>
-                        <h5>Padre Catena 4200 - Santa Fe - 3000 - Santa Fe</h5>
                         <h5>escuelademusicabarrialsf@gmail.com</h5>
-                      
+                        <h5>Padre Catena 4200 - Santa Fe - 3000 - Santa Fe</h5>
+
+                        <div className='icons-contact-container'>
+                                <div className='icons-contact'>
+                                    <a href='https://www.instagram.com/escuelademusicabarrial/' title='Instagram' target='_blank'>
+                                        <img src='img/icons/instagram.png' />
+                                    </a>
+                                    <a href='https://es-la.facebook.com/EscuelaDeMusicaBarrial/' title='Facebook' target='_blank'>
+                                        <img src='img/icons/fb-white.png' />
+                                    </a>
+                                    
+                                </div>
+                        </div>
                     </div>
                     
                 </div>

@@ -49,6 +49,18 @@
 .footer .info-contact .info h5 {
     color: white;
 }
+
+.footer .info-contact .info .icons-contact-container {
+    width: 100%; height: 2rem;
+}
+.footer .info-contact .info .icons-contact-container .icons-contact {
+    width: 100%; 
+}
+.footer .info-contact .info .icons-contact-container .icons-contact a img {
+    width: 2rem; height: 2rem;
+    margin-right: 1rem;
+}
+
 .footer .info-contact .map{
     width: 50%;height: 10rem;
     background-color: azure;
