@@ -20,9 +20,9 @@ const Basic = ({path, amount}) => (
       }}
       onSubmit={(values, { setSubmitting }) => {
         
-          console.log(path)
+          
           values.amount=parseInt(values.amount)
-          console.log(values)
+          
           setTimeout(() => {
               const data = values
               console.log(`${process.env.PORT}`)
