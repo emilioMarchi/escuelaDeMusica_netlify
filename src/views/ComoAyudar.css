@@ -32,7 +32,7 @@
     text-align: center;
 }
 .donation-container .video-container .frame{
-    height: 35%;
+    height: 45%;
     width: 100%;
     padding: 1rem;
 }
@@ -109,6 +109,7 @@
 
     .donation-container .video-container .frame {
         width: 100%; height: auto;
+        padding: 0;
     }
 
 

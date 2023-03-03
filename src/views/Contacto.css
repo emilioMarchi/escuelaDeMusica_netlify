@@ -4,7 +4,7 @@
     text-align: center;
 }
 .contact-section h2{
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 700;
     margin-bottom: 1.5rem;
 }
@@ -46,7 +46,7 @@
 
 
 .contact-section .contact-content .contact-form form {
-    padding: 0 3rem;
+
     width: 75%;
     margin: auto;
 }
@@ -57,10 +57,11 @@
 }
 .contact-section .contact-content .contact-form form .form-level input {
     text-align: center;
-
+    height: 2rem;
 }
 .contact-section .contact-content .contact-form form .form-level textarea {
     text-align: center;
+    height: 6rem;
 } 
 
 @media only screen and (max-width: 780px) {

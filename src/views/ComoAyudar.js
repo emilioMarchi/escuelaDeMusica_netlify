@@ -25,7 +25,7 @@ export default function CAyudarView (){
                             <h2>¿Querés saber cómo colaborar?</h2>
                             <h3>A continuación te dejamos un video explicativo acerca de cómo podes colaborar con nosotros</h3>
                             <div className='frame'>
-                                <iframe src={``}
+                                <video src={`/img/tutorial-colaborar.mp4`} controls
                                     
                                     style={{
                                         width: '100%',
@@ -41,7 +41,7 @@ export default function CAyudarView (){
                                     webkitallowfullscreen="webkitallowfullscreen"
                                 >
                                         
-                                </iframe>
+                                </video>
                                 
                             </div>
                         </div>
@@ -49,7 +49,7 @@ export default function CAyudarView (){
                             <h2>Las opciones para colaborar con nosotros son la siguientes</h2>
                             <Payments /> 
                             <div className='transfer-info-container'>
-                                <h3>Para colaborar mediante una transferencia bancaria podes utilizar los siguientes datos</h3>
+                                <h3>Para colaborar mediante una transferencia bancaria podés utilizar los siguientes datos</h3>
                                 <div className='transfer-info'>
 
                                     <h3>Cuenta. 1/10693409 – Cuenta Cte especial Pjur – Multimoneda</h3>
