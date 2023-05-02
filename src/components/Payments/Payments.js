@@ -108,7 +108,7 @@ export default function Payments () {
     return(
         <div className='payments-container'>
             
-            <h3>Completando el formulario debajo se te direccionara a Mercado Pago, donde encontrarás diferentes opciones de pago.</h3>
+            <h3>Completando el formulario debajo se te direccionara a Mercado Pago, donde vas a encontrar las diferentes opciones de pago.</h3>
             <div className='type-buttons-container'>
               <div className='buttons'>
                 <div className={ typeDonation === 'payment' ?'btn btn-dark selected' : 'btn btn-dark'}
@@ -118,7 +118,7 @@ export default function Payments () {
                   onClick={()=>{ setTypeDonation('subscription') }}
                 >Aporte mensual</div>
               </div>
-              <h3>Para abonar por única vez, selecciona "Aporte único". Para abonar de forma mensual, selecciona "Aporte mensual"</h3>
+              <h3>Para abonar por única vez, selecciona "Aporte único". Para abonar de forma mensual, selecciona "Aporte mensual".</h3>
             </div>
             
             <div className='payment-type'>
