@@ -24,7 +24,7 @@ export const PhotoGallery = () => {
             {
                 viewer === true ?
                 <>
-                    <FontAwesomeIcon icon={faArrowLeft} className='exit-icon' 
+                    <FontAwesomeIcon icon={faArrowLeft} className='exit-icon' style='z-index:600' 
                     onClick={()=>{
                         if (viewer === true) {
                             setViewer(false)

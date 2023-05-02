@@ -5,10 +5,12 @@
     padding: 1rem 0 1rem 0;
     
 }
-.photo-gallery-container svg.exit-icon {
-    padding: 0;
+.photo-gallery-container .exit-icon {
+    margin-top: 2rem;
+    
 }
 
 .photo-gallery-container .card-item {
     margin-top: 0.5rem;
+ 
 }
