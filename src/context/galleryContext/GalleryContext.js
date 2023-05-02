@@ -6,8 +6,9 @@ const photoGallery = [{url: '/img/01.jpg', id:1},{url: '/img/02.jpg', id:2}, {ur
 {url: '/img/10.jpg', id:10},{url: '/img/11.jpg', id:11},{url: '/img/12.jpg', id:12}, ]
 
 const videoGallery = [{url: 'https://www.youtube.com/embed/h6PdmrJemZo', id:1},{url: 'https://www.youtube.com/embed/N2ATtTdXrKg', id:2}, 
-{url: 'https://www.youtube.com/embed/XPNc1a01TtY', id:3},{url: 'https://www.youtube.com/embed/VIb33UUquEI', id:4},
-{url: 'https://www.youtube.com/embed/CYKFbmsa5NE', id:5},{url: 'https://www.youtube.com/embed/MscOL6BDvfI', id:6},]
+{url: 'https://youtube.com/embed/vfiZhrJvuTg', id:3},{url: 'https://youtube.com/embed/xyb7uVs45xI', id:4},
+{url: 'https://youtube.com/embed/S-27w3Ata5M', id:5},{url: 'https://youtube.com/embed/ZREmOfs5COE', id:6},
+{url: 'https://youtube.com/embed/Gl8lnbbES8E', id:7},]
 
 
 export const GalleryContext = createContext()
