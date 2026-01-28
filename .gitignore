@@ -1,19 +1,4 @@
-
-/node_modules
-/credentials.js
-# Local Netlify folder
-.netlify
-node_modules/
-.env
-.env.local
-dist/
-build/
-.DS_Store
-*.log
-.vscode/
-.idea/
-.next/
-out/
-.nuxt/
-coverage/
-.cache/
+*
+!build/
+!build/**
+!.gitignore
