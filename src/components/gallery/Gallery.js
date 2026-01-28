@@ -41,50 +41,56 @@ export function Gallery () {
             arraysGallery.push(galleryImages.slice(rest))
         }
     }
-    
-    
-    
     orderArrayCarrousel()
     
+    
+    
+    
     useEffect(()=>{
-        console.log(arraysGallery)
+        if(arraysGallery.length===0){
+            orderArrayCarrousel()
+        }
+  
         
-    }, [])
+    }, [arraysGallery])
 
-    return(
-        <div className='photo-gallery'>
-        
-            <div className='gallery-container'>
-                <a href='/galeria'>Ver galería</a>
-                <Carousel className='carousel-header' controls={false}>
-                    {
-                        arraysGallery!==undefined ?
-                        arraysGallery.map((item)=>{
-                            const array = item
+    if(arraysGallery.length!==0){
+        return(
+            <div className='photo-gallery'>
             
-                            return(
-                                
-                                    <Carousel.Item className='carousel-item'>
-                                        <div>
-
-                                            {
-                                                array.map((item)=>{
-                                                    return (
-                                                        <img src={item.url} />
-                                                    )
-                                                    
-                                                })
-                                            }
-                                       
-                                        </div>
-                                    </Carousel.Item>
-                                
-                            )
-                        }) : ''
-                    }
-                </Carousel>
-                
+                <div className='gallery-container'>
+                    <a href='/galeria'>Ver galería</a>
+                    <Carousel className='carousel-header' controls={false}>
+                        {
+                            
+                            arraysGallery.map((item)=>{
+                                const array = item
+                    
+                                return(
+                                    
+                                        <Carousel.Item className='carousel-item'>
+                                            <div>
+    
+                                                {
+                                                    array.map((item)=>{
+                                      
+                                                        return (
+                                                            <img src={item.url} />
+                                                        )
+                                                        
+                                                    })
+                                                }
+                                           
+                                            </div>
+                                        </Carousel.Item>
+                                    
+                                )
+                            })
+                        }
+                    </Carousel>
+                    
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
 }

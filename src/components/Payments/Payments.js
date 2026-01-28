@@ -25,9 +25,10 @@ const Basic = ({path, amount}) => (
           
           setTimeout(() => {
               const data = values
-              console.log(`${process.env.PORT}`)
-              axios.post(`https://api.escuelademusicabarrial.ar/${path}`, data)
+         
+              axios.post(`.netlify/functions/${path}`, data)
               .then((res)=>{
+              
                   const urlPayment = res.data.init_point
                   window.open(urlPayment)
               })
@@ -66,21 +67,15 @@ const Basic = ({path, amount}) => (
             value={values.email}
           />
           {errors.email && touched.email && errors.email}
-          <h4>Selecciones el monto con el que desea colaborar</h4>
-          <select 
+          <h4>Ingrese el monto con el que desea colaborar</h4>
+          <input
             type="number"
             name="amount"
             onChange={handleChange}
             onBlur={handleBlur}
             value={values.amount}
+          />
 
-          >
-            <option value={100}>$100</option>
-            <option value={300}>$300</option>
-            <option value={500}>$500</option>
-            <option value={700}>$700</option>
-            <option value={1000}>$1000</option>         
-          </select>
           
           {errors.amount && touched.amount && errors.amount}
           <button className='btn btn-primary' type="submit" disabled={ !path ? true : isSubmitting}

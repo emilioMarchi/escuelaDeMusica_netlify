@@ -21,7 +21,13 @@ import { GalleryProvider } from "./context/galleryContext/GalleryContext";
 import './App.css';
 
 
-
+const RoutesList = () => {
+  return(
+    <>
+                
+    </>
+  )
+}
 function App() {
 
   const basename = process.env.REACT_APP_NAME || null
@@ -32,6 +38,7 @@ function App() {
         <Router >
           <Header/>
             <Routes>
+                
                 <Route path="/" element={<InicioView />}/>
                 <Route path="/que-hacemos" element={<QHacemosView />}/>
                 <Route path="/quienes-somos" element={<QSomosView />}/>

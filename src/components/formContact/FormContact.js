@@ -1,7 +1,9 @@
 import React, {useState, useEffect } from 'react';
-import { useFormik } from 'formik';
+import { useFormik, validateYupSchema } from 'formik';
 import axios from 'axios'
 import $ from 'jquery'
+import {firebaseApp} from  '../../firebaseApp'
+import { getFirestore, addDoc, collection } from 'firebase/firestore';
 
 const FormContact = ({type}) => {
     
@@ -38,26 +40,33 @@ const FormContact = ({type}) => {
         console.log(values)
         if(values.userName !== '' && values.userEmail !== '' && values.userQuery !== '' && values.queryType !== '') {
           
-          await axios({
-            method: 'post',
-            url:`https://api.escuelademusicabarrial.ar/contact`,
-            withCredentials: false,
-            data: values
+          await fetch('/.netlify/functions/send-form', {
+            method:'POST',
+            body:JSON.stringify(values),
+            headers: {
+              'Content-Type': 'application/json',
+            }
+          })
+          .then(async (res)=>{
+
+            return  res.json()
+            //
           }).then((res)=>{
-            setFormResponse(res.data.state)
+            setFormResponse(res.status)
             setFormInfo(values)
             resetForm()
-            setFormMsj(res.data.msj)
-    
-            handleMsj(res.data.msj)
+            setFormMsj(res.msg)
+            handleMsj(res.msg) 
+            
+            console.log(res)  
           })
         }
         else{
           console.log('Error values')
           handleMsj('Hay campos sin rellenar')
         }
-      } catch{
-        console.log('error server connection')
+      } catch(err){
+        console.log('error server connection',err)
       }
     }
   });

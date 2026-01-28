@@ -8,7 +8,7 @@ import './Inicio.css'
 
 export const InicioView = ()=>{
     useEffect(()=>{
-        console.log(process.env.REACT_APP_PORT)
+     
         window.scroll(0,0)
     }, [])
     return(

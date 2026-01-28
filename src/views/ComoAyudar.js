@@ -21,6 +21,21 @@ export default function CAyudarView (){
                 </div>
                 <div>
                     <div className='donation-container'>
+                        <div className='payment-options-container'>
+                            <h2>Las opciones para colaborar con nosotros son la siguientes</h2>
+                                <Payments /> 
+                            <div className='transfer-info-container'>
+                                <h3>Para colaborar mediante una transferencia bancaria podés utilizar los siguientes datos</h3>
+                                <div className='transfer-info'>
+                                <h3>Alias: escuela.demusica</h3>
+                                    <h3>Cuenta. 1/10693409 – Cuenta Cte especial Pjur – Multimoneda</h3>
+                                    <h3>Titular: Asociación Civil Escuela – CUIT N.º 30-71507183-1</h3>
+                                    <h3>CBU Pesos: 4260001/9-0020010693409/2</h3>
+                                    <h3>CBU U$S:    4260001/9-0022010693409/0</h3>
+                                </div>
+                            </div>
+
+                        </div>
                         <div className='video-container'>
                             <h2>¿Querés saber cómo colaborar?</h2>
                             <h3>A continuación te dejamos un video explicativo acerca de cómo podes colaborar con nosotros</h3>
@@ -44,21 +59,6 @@ export default function CAyudarView (){
                                 </video>
                                 
                             </div>
-                        </div>
-                        <div className='payment-options-container'>
-                            <h2>Las opciones para colaborar con nosotros son la siguientes</h2>
-                            <Payments /> 
-                            <div className='transfer-info-container'>
-                                <h3>Para colaborar mediante una transferencia bancaria podés utilizar los siguientes datos</h3>
-                                <div className='transfer-info'>
-                                <h3>Alias: escuela.demusica</h3>
-                                    <h3>Cuenta. 1/10693409 – Cuenta Cte especial Pjur – Multimoneda</h3>
-                                    <h3>Titular: Asociación Civil Escuela – CUIT N.º 30-71507183-1</h3>
-                                    <h3>CBU Pesos: 4260001/9-0020010693409/2</h3>
-                                    <h3>CBU U$S:    4260001/9-0022010693409/0</h3>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </div>

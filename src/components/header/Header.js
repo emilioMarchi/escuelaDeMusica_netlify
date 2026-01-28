@@ -23,8 +23,11 @@ export default function Header () {
 
     return(
         <div className='header'>
+            <a className='logo'>
+                <img src='img/logo.png' />
+            </a>
             <Nav state={navState} function={setNavState} />
-            <FontAwesomeIcon onClick={()=>{handlerNavState(); console.log(navState)}} className='nav-bar-icon' icon={faBars} />
+            <FontAwesomeIcon onClick={()=>{handlerNavState(); }} className='nav-bar-icon' icon={faBars} />
         </div>
     )
 }
